@@ -1,10 +1,10 @@
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/payment_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'cart_info_item.dart';
 import 'total_price_widget.dart';
-
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -49,16 +49,23 @@ class MyCartViewBody extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
-        
           const SizedBox(
             height: 12,
           ),
-          CustomButton(text:'complete payment' ,isLoading:false ,onTap: () {
-            
-          },),
-          SizedBox(height: 19,)
+          CustomButton(
+            text: 'complete payment',
+            isLoading: false,
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => PaymentDetailsView(),
+              ));
+            },
+          ),
+          SizedBox(
+            height: 19,
+          )
         ],
       ),
     );
   }
-  }
+}
