@@ -1,6 +1,5 @@
 import 'package:checkout_payment_ui/core/widgets/cutom_app_bar.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_details_view_body.dart';
-import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_methods_list_view.dart';
 import 'package:flutter/material.dart';
 
 class PaymentDetailsView extends StatelessWidget {

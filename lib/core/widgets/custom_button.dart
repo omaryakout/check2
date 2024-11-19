@@ -10,6 +10,7 @@ class CustomButton extends StatelessWidget {
   });
 
   final void Function()? onTap;
+  
 
   final String text;
   final bool isLoading;
