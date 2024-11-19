@@ -1,5 +1,8 @@
 import 'dart:developer';
 import 'package:checkout_payment_ui/features/checkout/presentation/thank_you_view.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_method_item.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_methods_bottom_sheet.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_methods_list_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/widgets/custom_credit_card.dart';
@@ -19,7 +22,6 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        
         SliverToBoxAdapter(
           child: CustomCreditCard(
             autovalidateMode: autovalidateMode,
@@ -40,11 +42,7 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
                     } else {
                       autovalidateMode = AutovalidateMode.always;
                       setState(() {});
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) {
-                          return ThankYouView();
-                        },
-                      ));
+                      
                     }
                   },
                 ),
