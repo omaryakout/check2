@@ -61,11 +61,11 @@ class MyCartViewBody extends StatelessWidget {
               //   builder: (context) => PaymentDetailsView(),
               // ));
               showModalBottomSheet(
-                        context: context,
-                        builder: (context) {
-                          return PaymentMethodsBottomSheet();
-                        },
-                      );
+                context: context,
+                builder: (context) {
+                  return PaymentMethodsBottomSheet();
+                },
+              );
             },
           ),
           SizedBox(

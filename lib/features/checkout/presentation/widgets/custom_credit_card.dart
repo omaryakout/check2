@@ -16,7 +16,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
   String cardNumber = '', expiryDate = '', cardHolderName = '', cvvCode = '';
 
   bool showBackView = false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Column(

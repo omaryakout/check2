@@ -42,7 +42,6 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
                     } else {
                       autovalidateMode = AutovalidateMode.always;
                       setState(() {});
-                      
                     }
                   },
                 ),

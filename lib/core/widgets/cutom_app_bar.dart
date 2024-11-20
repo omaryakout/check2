@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../utilis/styles.dart';
 
-AppBar buildAppBar({final String? title,required BuildContext context}) {
+AppBar buildAppBar({final String? title, required BuildContext context}) {
   return AppBar(
     leading: GestureDetector(
       onTap: () {

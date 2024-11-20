@@ -1,4 +1,3 @@
-
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/widgets/payment_methods_list_view.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +39,6 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
           const SizedBox(
             height: 32,
           ),
-          
         ],
       ),
     );

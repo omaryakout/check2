@@ -13,12 +13,13 @@ class MyCart extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading:Center(child: SvgPicture.asset('assets/images/arrow.svg')) ,
-        title: Text('My Cart',style: Styles.style25,),
+        leading: Center(child: SvgPicture.asset('assets/images/arrow.svg')),
+        title: Text(
+          'My Cart',
+          style: Styles.style25,
+        ),
       ),
       body: MyCartViewBody(),
     );
   }
 }
-
-

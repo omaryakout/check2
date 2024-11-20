@@ -33,7 +33,7 @@ import 'custom_dashed_line.dart';
 //               child:Padding(
 //                 padding: const EdgeInsets.symmetric(horizontal: 20),
 //                 child: Row(
-//                   children: 
+//                   children:
 //                     List.generate(30, (index) {
 //                       return Expanded(
 //                         child: Padding(
@@ -45,7 +45,7 @@ import 'custom_dashed_line.dart';
 //                         ),
 //                       );
 //                     },)
-                  
+
 //                 ),
 //               )),
 //           Positioned(
