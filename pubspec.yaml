@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.0.13
   flutter_credit_card: ^4.0.0+1
   flutter_stripe: ^11.3.0
+  dio: ^5.7.0
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
