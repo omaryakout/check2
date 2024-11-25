@@ -1,9 +1,7 @@
 import 'package:dio/dio.dart';
 
-
 class ApiService {
-
- Dio dio = Dio();
+  Dio dio = Dio();
 
   Future<Response> post(
       {required body,
@@ -17,6 +15,4 @@ class ApiService {
             headers: {'Authorization': "Bearer $token"}));
     return response;
   }
-
-
 }
