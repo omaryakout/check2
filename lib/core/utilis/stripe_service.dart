@@ -1,7 +1,6 @@
 import 'package:checkout_payment_ui/core/utilis/api_service.dart';
 import 'package:checkout_payment_ui/core/utilis/keys.dart';
 import 'package:dio/dio.dart';
-
 import '../../features/checkout/data/models/payment_intent_input_model.dart';
 import '../../features/checkout/data/models/payment_intent_model/payment_intent_model.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
@@ -11,6 +10,7 @@ class StripeService {
   Future<PaymentIntentModel> createPaymentIntent(
       PaymentIntentInputModel paymentintentinputmodel) async {
     var result = await apiService.post(
+        contentType: Headers.formUrlEncodedContentType,
         body: paymentintentinputmodel.toJson(),
         url: 'https://api.stripe.com/v1/payment_intents',
         token: Keys.secretKey);
