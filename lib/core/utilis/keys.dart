@@ -4,4 +4,7 @@ class Keys {
 
   static String publishKey =
       'pk_test_51QHKqgGHs0MV7k04lWX1QLcElFbagyDwURQwfqmyFIPHg2zsOPl7BmHMHMHraMrwSK4nYykp0YFq2KU8vzDZB3CT00ewZFZKdV';
+
+   static String clientIdPaypal ='AWZHu0Fx4Kuu4OLUz4l_DfFt9jeAxOTJ0DeSs01Ygkl-pLjJooPLwHlOi8PHfGL8V7VnqpKEtYJPeYrQ';
+    static String clientSecretPaypal = 'EElMP9zSmIkFiav2DHSHapzr1zvqr51GoGEfIX6kuFbojQGQQu72PqQu7hOKudzgBUsI8Pyya7aQDm20' ;  
 }

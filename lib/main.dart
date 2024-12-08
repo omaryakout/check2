@@ -5,6 +5,7 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 import 'features/checkout/presentation/my_cart.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   Stripe.publishableKey = Keys.publishKey;
   runApp(const CheckoutApp());
 }

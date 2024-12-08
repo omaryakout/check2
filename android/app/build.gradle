@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.checkout_payment_ui"
     
-    compileSdk = flutter.compileSdkVersion
+    compileSdk  34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

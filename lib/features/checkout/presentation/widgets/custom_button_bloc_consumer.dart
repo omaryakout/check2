@@ -1,8 +1,11 @@
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/manager/cubit/payment_cubit.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/web_view_paypal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utilis/keys.dart';
+import '../../../../core/utilis/paypal_service.dart';
 import '../../data/models/payment_intent_input_model.dart';
 import '../thank_you_view.dart';
 
@@ -33,9 +36,12 @@ class CustomButtonBlocConsumer extends StatelessWidget {
         return CustomButton(
           text: 'continue',
           isLoading: state is PaymentLoading ? true : false,
-          onTap: () {
-            BlocProvider.of<PaymentCubit>(context)
-                .makePayment(paymentIntentInputModel: paymentIntentInputModel);
+          onTap: () async {
+            // BlocProvider.of<PaymentCubit>(context)
+            //     .makePayment(paymentIntentInputModel: paymentIntentInputModel);
+            var paypal = PaypalService();
+            paypal.executePayment(Keys.clientIdPaypal, Keys.clientSecretPaypal);
+           
           },
         );
       },
